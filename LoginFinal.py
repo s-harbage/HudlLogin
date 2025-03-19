@@ -76,7 +76,7 @@ class TestLoggingIntoHudl:
 
     def test_empty_password(self):
         """Test login with an empty password field."""
-        self.login("testuser@example.com", "")  # Assume the email is valid but password is empty
+        self.login("s.harbage@gmail.com", "")
         error_message = WebDriverWait(self.driver, 10).until(
             EC.visibility_of_element_located((By.XPATH, "//*[contains(text(),'Please fill in this field')]"))
         )
